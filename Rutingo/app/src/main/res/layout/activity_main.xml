@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#636363"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="404dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="                  RUTINGO"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:layout_width="450dp"
+        android:layout_height="288dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="#e5180f"
+        android:src="@drawable/micro" />
+
+
+    <Button
+        android:id="@+id/Btn_iniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#e5180f"
+        android:text="Iniciar" />
+
+    <TextView
+        android:layout_width="422dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="            rutas de tulancingo"
+        android:textSize="30sp" />
+</LinearLayout>
