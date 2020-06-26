@@ -1,0 +1,38 @@
+$def with(rutingo, message)
+<h3>
+    <a href="/rutingo">rutingo</a>
+</h3>
+$if message != None:
+    <div class="alert alert-warning">
+        <strong>Advertencia </strong> $message
+    </div>
+<br>
+
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="id" id="id" value="$rutingo.id" />
+
+    <div class="form-group">
+    <label for="nombre">nombre</label>
+    <input readonly id="nombre" type="text" class="form-control" name="nombre" size="30" value="$rutingo.nombre"/>
+</div><div class="form-group">
+    <label for="costo">costo</label>
+    <input readonly id="costo" type="text" class="form-control" name="costo" size="30" value="$rutingo.costo"/>
+</div><div class="form-group">
+    <label for="hora_inicio">hora_inicio</label>
+    <input readonly id="hora_inicio" type="text" class="form-control" name="hora_inicio" size="30" value="$rutingo.hora_inicio"/>
+</div><div class="form-group">
+    <label for="hora_final">hora_final</label>
+    <input readonly id="hora_final" type="text" class="form-control" name="hora_final" size="30" value="$rutingo.hora_final"/>
+</div><div class="form-group">
+    <label for="tiempo_recorrido">tiempo_recorrido</label>
+    <input readonly id="tiempo_recorrido" type="text" class="form-control" name="tiempo_recorrido" size="30" value="$rutingo.tiempo_recorrido"/>
+</div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+    </div>
+</form>
+<br>
+<br>
+<br>

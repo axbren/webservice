@@ -1,0 +1,21 @@
+$def with(rutingo)
+<h3>
+    <a href="/rutingo">rutingo</a>
+</h3>
+<table id="datos_tabla" class="table table-hover" cellspacing="0" width="100%">
+    <thead>
+        <th>rutingo</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </thead>
+    <tbody>
+        $for item in rutingo:
+        <tr>
+            <td><a href='/rutingo/view/$item.id'>$item.nombre</a></td>
+            <td><a href='/rutingo/edit/$item.id'><span class="glyphicon glyphicon-pencil"></span></a></td>
+            <td><a href='/rutingo/delete/$item.id'><span class="glyphicon glyphicon-trash"></span></a></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>
