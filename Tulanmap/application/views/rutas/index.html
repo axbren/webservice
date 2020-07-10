@@ -10,6 +10,8 @@ $def with(rutas)
         <th>Edit</th>
         <th>Delete</th>
     </thead>
+
+
     <tbody>
         $for item in rutas:
         <tr>
@@ -17,7 +19,14 @@ $def with(rutas)
             <td><a href='/rutas/edit/$item.id_ruta'><span class="glyphicon glyphicon-pencil"></span></a></td>
             <td><a href='/rutas/delete/$item.id_ruta'><span class="glyphicon glyphicon-trash"></span></a></td>
         </tr>
+    
+
     </tbody>
 </table>
+<center>
+    <img src="/static/files/paradas-tulanmap.jpg" width="400" height="150" alt="este es el logo de Tulanmap">
+
+</center>
+
 <br>
 <br>
