@@ -35,6 +35,7 @@ $def with (page)
                 <ul class="nav navbar-nav navbar-right">
                     $if page.privilege == '-1':
                         <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        
 
                     $elif page.privilege == '0':
                         <li class='active'><a href="/"><span class="glyphicon glyphicon-user"></span> $page.username </a></li>
