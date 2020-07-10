@@ -19,7 +19,7 @@ $def with(users)
     <tbody>
         $for item in users:
         <tr>
-            <td><a href='/users/view/$item.username'>$item.name</a></td>
+            <td><img src="/static/files/usuario.png" width="40" height="30"><a href='/users/view/$item.username'>$item.name</a></td>
             <td><a href='/users/view/$item.username'>$item.username.split('!')[0]</a></td>
             $if item.status == 0:
                 <td>Disabled</td>
